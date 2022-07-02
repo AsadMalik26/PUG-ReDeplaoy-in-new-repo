@@ -42,10 +42,13 @@ app.use(function (err, req, res, next) {
 });
 
 mongoose
-  .connect("mongodb://127.0.0.1/PugCrud", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    "mongodb+srv://Asadm26:OpenCode.mdbA26@clustera26.zhmri.mongodb.net/PUGCrud?retryWrites=true&w=majority",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => console.log("Connected with mongodb - pug crud"))
   .catch((err) => console.log(err.message));
 
