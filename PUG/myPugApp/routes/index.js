@@ -16,4 +16,10 @@ router.get("/contactus", function (req, res, next) {
   res.render("contactus");
 });
 
+router.get("/cart", function (req, res, next) {
+  let cart = req.cookies.cart;
+  if (!cart) cart = [];
+  res.render("cart", { cart });
+});
+
 module.exports = router;
