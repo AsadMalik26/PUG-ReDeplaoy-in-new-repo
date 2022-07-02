@@ -1,0 +1,24 @@
+/* body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+} */
+/* link(rel="stylesheet", href="/node_modules/bootstrap/dist/css/bootstrap.min.css") */
+a {
+  color: #ff0000;
+}
+
+h1{
+  color: white;
+  background: rgb(113, 248, 136);
+  text-align: center;
+}
+
+#menu {
+  text-align: center;
+}
+
+#menu li{
+  display: inline;
+  margin: 10px;
+  list-style-type: none;
+}

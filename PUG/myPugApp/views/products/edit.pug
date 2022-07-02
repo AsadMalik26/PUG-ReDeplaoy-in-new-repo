@@ -1,0 +1,12 @@
+extends ../layout
+
+block content 
+    h1 Update Record
+    form(action="/products/edit/"+product._id, method="post") 
+        .form-group 
+            label(for="name") Product Name
+            input#name.form-control(type="text", name="name" , value = product.name)     
+        .form-group 
+            label(for="price") Price
+            input#price.form-control(type="text", name="price" , value = product.price)
+        input(type="submit", class="btn btn-success")
